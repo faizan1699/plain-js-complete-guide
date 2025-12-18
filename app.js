@@ -57,6 +57,7 @@ const API_NAV_ITEMS = [
   { id: 'api-storage', index: 'S6', title: 'localStorage.getItem / setItem', tag: 'Storage' },
   { id: 'api-history', index: 'H1', title: 'history.pushState', tag: 'History' },
   { id: 'api-url', index: 'U1', title: 'URL & URLSearchParams', tag: 'URL' },
+  { id: 'api-array-detailed', index: 'AD', title: 'Array Methods - Detailed Examples', tag: 'Array' },
 ];
 
 // ============================================
@@ -796,7 +797,55 @@ const PAGES = {
     title: 'Section 20 · API & Method Reference',
     type: 'Guide Section',
     level: 'Reference',
-    body: `<div class="content-body"><h3>API Reference</h3><p>A–Z reference of global objects, methods, properties. Each with description, syntax, example. See the API Reference section in the sidebar for individual function pages.</p></div>`
+    body: `
+      <div class="content-body">
+        <h3>API Reference</h3>
+        <p>A–Z reference of global objects, methods, properties. Each with description, syntax, example. See the API Reference section in the sidebar for individual function pages.</p>
+        
+        <h4>Detailed Array Methods</h4>
+        <p>Comprehensive examples for all array methods are available in separate files:</p>
+        <ul>
+          <li><code>examples/api/array-methods-detailed/01-map-detailed.js</code> - Array.prototype.map</li>
+          <li><code>examples/api/array-methods-detailed/02-filter-detailed.js</code> - Array.prototype.filter</li>
+          <li><code>examples/api/array-methods-detailed/03-reduce-detailed.js</code> - Array.prototype.reduce</li>
+          <li><code>examples/api/array-methods-detailed/04-forEach-detailed.js</code> - Array.prototype.forEach</li>
+          <li><code>examples/api/array-methods-detailed/05-find-detailed.js</code> - Array.prototype.find</li>
+          <li><code>examples/api/array-methods-detailed/06-some-every-detailed.js</code> - Array.prototype.some & every</li>
+          <li><code>examples/api/array-methods-detailed/07-slice-splice-detailed.js</code> - Array.prototype.slice & splice</li>
+          <li><code>examples/api/array-methods-detailed/08-sort-detailed.js</code> - Array.prototype.sort</li>
+          <li><code>examples/api/array-methods-detailed/09-flat-flatMap-detailed.js</code> - Array.prototype.flat & flatMap</li>
+          <li><code>examples/api/array-methods-detailed/10-concat-includes-detailed.js</code> - Array.prototype.concat & includes</li>
+        </ul>
+        
+        <h4>View Detailed Examples</h4>
+        <div class="code-block">
+          <div class="code-block-header">
+            <span>Example · Array.map - Detailed</span>
+            <span class="pill-small">js</span>
+            <span class="code-ref">Source: <code>examples/api/array-methods-detailed/01-map-detailed.js</code></span>
+          </div>
+          <pre><code data-src="examples/api/array-methods-detailed/01-map-detailed.js"></code></pre>
+        </div>
+        
+        <div class="code-block">
+          <div class="code-block-header">
+            <span>Example · Array.filter - Detailed</span>
+            <span class="pill-small">js</span>
+            <span class="code-ref">Source: <code>examples/api/array-methods-detailed/02-filter-detailed.js</code></span>
+          </div>
+          <pre><code data-src="examples/api/array-methods-detailed/02-filter-detailed.js"></code></pre>
+        </div>
+        
+        <div class="code-block">
+          <div class="code-block-header">
+            <span>Example · Array.reduce - Detailed</span>
+            <span class="pill-small">js</span>
+            <span class="code-ref">Source: <code>examples/api/array-methods-detailed/03-reduce-detailed.js</code></span>
+          </div>
+          <pre><code data-src="examples/api/array-methods-detailed/03-reduce-detailed.js"></code></pre>
+        </div>
+      </div>
+    `
   },
   'section-21-best': {
     title: 'Section 21 · Best Practices & Interviews',
@@ -1253,6 +1302,155 @@ PAGES['api-url'] = {
   body: `<div class="content-body"><h3>Description</h3><p>Parses and manipulates URLs and query strings.</p><div class="code-block"><div class="code-block-header"><span>Example</span><span class="pill-small">js</span></div><pre><code>const url = new URL('https://example.com?x=1');
 const params = new URLSearchParams(url.search);
 params.get('x'); // "1"</code></pre></div></div>`
+};
+
+PAGES['api-array-detailed'] = {
+  title: 'API · Array Methods - Detailed Examples',
+  type: 'API Reference',
+  level: 'Array',
+  body: `
+    <div class="content-body">
+      <h3>Comprehensive Array Method Examples</h3>
+      <p>This page contains detailed examples for all major array methods. Each example file includes multiple use cases, edge cases, and best practices.</p>
+      
+      <h4>Available Detailed Examples</h4>
+      <ul>
+        <li><strong>map</strong> - Transform each element</li>
+        <li><strong>filter</strong> - Select elements by condition</li>
+        <li><strong>reduce</strong> - Accumulate values</li>
+        <li><strong>forEach</strong> - Execute callback for each</li>
+        <li><strong>find</strong> - Find first matching element</li>
+        <li><strong>some & every</strong> - Boolean checks</li>
+        <li><strong>slice & splice</strong> - Extract/modify portions</li>
+        <li><strong>sort</strong> - Sort array elements</li>
+        <li><strong>flat & flatMap</strong> - Flatten nested arrays</li>
+        <li><strong>concat & includes</strong> - Combine and check</li>
+      </ul>
+      
+      <h4>Array.prototype.map - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive map examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/01-map-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/01-map-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.filter - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive filter examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/02-filter-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/02-filter-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.reduce - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive reduce examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/03-reduce-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/03-reduce-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.forEach - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive forEach examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/04-forEach-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/04-forEach-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.find - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive find examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/05-find-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/05-find-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.some & every - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive some & every examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/06-some-every-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/06-some-every-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.slice & splice - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive slice & splice examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/07-slice-splice-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/07-slice-splice-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.sort - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive sort examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/08-sort-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/08-sort-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.flat & flatMap - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive flat & flatMap examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/09-flat-flatMap-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/09-flat-flatMap-detailed.js"></code></pre>
+      </div>
+      
+      <h4>Array.prototype.concat & includes - Detailed</h4>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Comprehensive concat & includes examples</span>
+          <span class="pill-small">js</span>
+          <span class="code-ref">Source: <code>examples/api/array-methods-detailed/10-concat-includes-detailed.js</code></span>
+        </div>
+        <pre><code data-src="examples/api/array-methods-detailed/10-concat-includes-detailed.js"></code></pre>
+      </div>
+      
+      <h4>File Structure</h4>
+      <p>All detailed examples are stored in:</p>
+      <div class="code-block">
+        <div class="code-block-header">
+          <span>Directory structure</span>
+          <span class="pill-small">text</span>
+        </div>
+        <pre><code>examples/api/array-methods-detailed/
+├── 01-map-detailed.js
+├── 02-filter-detailed.js
+├── 03-reduce-detailed.js
+├── 04-forEach-detailed.js
+├── 05-find-detailed.js
+├── 06-some-every-detailed.js
+├── 07-slice-splice-detailed.js
+├── 08-sort-detailed.js
+├── 09-flat-flatMap-detailed.js
+├── 10-concat-includes-detailed.js
+└── README.md</code></pre>
+      </div>
+      
+      <p>See <code>USAGE.md</code> in the project root for more information on using these examples.</p>
+    </div>
+  `
 };
 
 // ============================================
