@@ -6,8 +6,47 @@
   <title>JavaScript Guide - Complete Professional Documentation</title>
   <meta name="description" content="Complete JavaScript guide from beginner to advanced - language reference, API documentation, and real-world patterns" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .top-navbar {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .top-navbar nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .top-navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .top-navbar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+    }
+    .top-navbar a.active {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
 </head>
 <body>
+  <div class="top-navbar">
+    <nav aria-label="Web Development Guides">
+      <a href="https://faizan1699.github.io/html-plan/">📄 HTML Guide</a>
+      <a href="https://faizan1699.github.io/css-plan-guide/">🎨 CSS Guide</a>
+      <a href="https://faizan1699.github.io/plain-js-complete-guide/" class="active">⚡ JavaScript Guide</a>
+    </nav>
+  </div>
   <div class="layout-shell">
     <!-- HEADER -->
     <header class="app-header">
