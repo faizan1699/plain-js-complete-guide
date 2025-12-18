@@ -122,9 +122,14 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Simple Node.js HTTP server</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-1/node-server-example.js</code></span>
           </div>
-          <pre><code data-src="examples/section-1/node-server-example.js"></code></pre>
+          <pre><code>// Example: Simple Node.js HTTP server
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World');
+});
+server.listen(3000);</code></pre>
         </div>
 
         <h5>Deno</h5>
@@ -148,9 +153,16 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · HTML + CSS + JS layout</span>
             <span class="pill-small">html</span>
-            <span class="code-ref">Source: <code>examples/section-1/html-layout-example.html</code></span>
           </div>
-          <pre><code data-src="examples/section-1/html-layout-example.html"></code></pre>
+          <pre><code>&lt;!-- Example: HTML + CSS + JS layout --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;/* CSS styles */&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script&gt;/* JavaScript code */&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
         </div>
 
         <h4>How JavaScript is Executed (JIT, V8 Overview)</h4>
@@ -203,9 +215,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · ES3 try/catch</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es3-trycatch-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es3-trycatch-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Impact</strong>: Stable baseline for early browsers.</p>
 
@@ -223,9 +235,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · ES5 Array methods</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es5-array-methods-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es5-array-methods-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Impact</strong>: Enabled more reliable, structured, functional-style JavaScript.</p>
 
@@ -249,9 +261,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · ES2015 features</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es2015-features-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es2015-features-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Impact</strong>: Massive leap forward; foundation of "modern JavaScript".</p>
 
@@ -266,9 +278,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · ES2016</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es2016-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es2016-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h4>ES2017 (ES8)</h4>
@@ -283,9 +295,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · async/await</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es2017-async-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es2017-async-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h4>ES2018 (ES9)</h4>
@@ -320,9 +332,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Optional chaining & nullish coalescing</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es2020-optional-chaining-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es2020-optional-chaining-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h4>ES2021</h4>
@@ -345,9 +357,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Private fields</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-2/es2022-private-fields-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-2/es2022-private-fields-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h4>ES2023 - ES2024+</h4>
@@ -383,9 +395,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Variable scoping</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/variables-scoping-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/variables-scoping-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Best Practice</strong>: Use <code>const</code> by default, <code>let</code> when re-assignment is needed. Avoid <code>var</code>.</p>
 
@@ -404,9 +416,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Primitive types</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/primitive-types-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/primitive-types-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>Reference Types</h5>
@@ -422,9 +434,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Reference types</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/reference-types-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/reference-types-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Edge Case</strong>: Primitives are immutable; objects are mutable. But primitive wrappers exist (<code>new String</code>, <code>new Number</code>) - avoid them.</p>
 
@@ -434,27 +446,27 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Implicit coercion</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/implicit-coercion-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/implicit-coercion-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Explicit</strong>:</p>
         <div class="code-block">
           <div class="code-block-header">
             <span>Example · Explicit conversion</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/explicit-conversion-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/explicit-conversion-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Edge Cases</strong>:</p>
         <div class="code-block">
           <div class="code-block-header">
             <span>Example · Coercion edge cases</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/coercion-edge-cases-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/coercion-edge-cases-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h4>Operators</h4>
@@ -464,9 +476,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Arithmetic operators</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/arithmetic-operators-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/arithmetic-operators-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>Comparison</h5>
@@ -479,9 +491,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Comparison operators</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/comparison-operators-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/comparison-operators-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>Logical</h5>
@@ -490,9 +502,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Logical operators</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/logical-operators-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/logical-operators-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>Assignment</h5>
@@ -508,9 +520,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · if/else</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/if-else-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/if-else-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>switch</h5>
@@ -518,9 +530,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · switch statement</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/switch-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/switch-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h5>Loops</h5>
@@ -529,9 +541,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · for loop</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/for-loop-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/for-loop-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>while</strong>:</p>
@@ -539,9 +551,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · while loop</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/while-loop-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/while-loop-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>do...while</strong>:</p>
@@ -549,9 +561,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · do...while loop</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/dowhile-loop-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/dowhile-loop-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>for...of</strong>: Iterate <strong>values</strong> of iterables (arrays, strings, etc.)</p>
@@ -559,9 +571,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · for...of loop</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/forof-loop-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/forof-loop-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>for...in</strong>: Iterate <strong>keys</strong> of objects (enumerable properties)</p>
@@ -569,9 +581,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · for...in loop</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-3/forin-loop-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-3/forin-loop-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Edge Case</strong>: Don't use <code>for...in</code> on arrays (it iterates keys, including inherited). Use <code>for</code>, <code>for...of</code>, or array methods.</p>
       </div>
@@ -592,9 +604,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Function declaration</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/function-declaration-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/function-declaration-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p>Hoisted (available before declaration in scope).</p>
 
@@ -603,9 +615,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Function expression</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/function-expression-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/function-expression-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p>Not hoisted as a whole (only variable name is hoisted). Useful for passing as arguments.</p>
 
@@ -614,9 +626,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Arrow functions</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/arrow-functions-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/arrow-functions-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Lexical <code>this</code></strong> (no own <code>this</code>, <code>arguments</code>, <code>super</code>, <code>new.target</code>). Cannot be used as constructors (<code>new</code>).</p>
         <p><strong>Edge Case</strong>: Don't use arrow functions as methods when you need <code>this</code> pointing to the object.</p>
@@ -627,9 +639,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Default parameters</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/default-parameters-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/default-parameters-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>Rest parameters</strong>:</p>
@@ -637,9 +649,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Rest parameters</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/rest-parameters-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/rest-parameters-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h3>Closures</h3>
@@ -648,9 +660,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Closure</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/closure-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/closure-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p><strong>Use Cases</strong>: Data privacy, function factories, memoization.</p>
 
@@ -659,9 +671,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · IIFE</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/iife-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/iife-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p>Used historically for <strong>scoping</strong> before modules and <code>let/const</code>. Still useful for encapsulation.</p>
 
@@ -671,9 +683,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Higher-order function</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/higher-order-function-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/higher-order-function-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <h3>Pure vs Impure Functions</h3>
@@ -682,9 +694,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Pure function</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/pure-function-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/pure-function-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
 
         <p><strong>Impure</strong>: Depends on or modifies external state.</p>
@@ -692,9 +704,9 @@ const PAGES = {
           <div class="code-block-header">
             <span>Example · Impure function</span>
             <span class="pill-small">js</span>
-            <span class="code-ref">Source: <code>examples/section-4/impure-function-example.js</code></span>
+
           </div>
-          <pre><code data-src="examples/section-4/impure-function-example.js"></code></pre>
+          <pre><code>// Example code</code></pre>
         </div>
         <p>Pure functions are easier to test and reason about; widely used in functional and UI frameworks.</p>
       </div>
@@ -724,7 +736,7 @@ const PAGES = {
     title: 'Section 8 · Asynchronous JavaScript',
     type: 'Guide Section',
     level: 'Critical',
-    body: `<div class="content-body"><h3>Promises & async/await</h3><p>Synchronous vs asynchronous, call stack, event loop, callbacks, Promises, async/await, error handling, Promise combinators.</p><div class="code-block"><div class="code-block-header"><span>Example · async/await</span><span class="pill-small">js</span><span class="code-ref">Source: <code>examples/section-8/async-await-example.js</code></span></div><pre><code data-src="examples/section-8/async-await-example.js"></code></pre></div></div>`
+    body: `<div class="content-body"><h3>Promises & async/await</h3><p>Synchronous vs asynchronous, call stack, event loop, callbacks, Promises, async/await, error handling, Promise combinators.</p><div class="code-block"><div class="code-block-header"><span>Example · async/await</span><span class="pill-small">js</span></div><pre><code>// Example code</code></pre></div></div>`
   },
   'section-9-dom': {
     title: 'Section 9 · DOM & Events',
@@ -829,17 +841,17 @@ PAGES['api-array-map'] = {
         <div class="code-block-header">
           <span>Example · Basic usage</span>
           <span class="pill-small">js</span>
-          <span class="code-ref">Source: <code>examples/api/array-map-basic-example.js</code></span>
+
         </div>
-        <pre><code data-src="examples/api/array-map-basic-example.js"></code></pre>
+        <pre><code>// Example code</code></pre>
       </div>
       <div class="code-block">
         <div class="code-block-header">
           <span>Example · Map objects to specific fields</span>
           <span class="pill-small">js</span>
-          <span class="code-ref">Source: <code>examples/api/array-map-objects-example.js</code></span>
+
         </div>
-        <pre><code data-src="examples/api/array-map-objects-example.js"></code></pre>
+        <pre><code>// Example code</code></pre>
       </div>
       <h4>Common Edge Cases</h4>
       <ul>
@@ -862,9 +874,9 @@ PAGES['api-array-filter'] = {
         <div class="code-block-header">
           <span>Example</span>
           <span class="pill-small">js</span>
-          <span class="code-ref">Source: <code>examples/api/array-filter-example.js</code></span>
+
         </div>
-        <pre><code data-src="examples/api/array-filter-example.js"></code></pre>
+        <pre><code>// Example code</code></pre>
       </div>
     </div>
   `
@@ -882,9 +894,9 @@ PAGES['api-array-reduce'] = {
         <div class="code-block-header">
           <span>Example · Sum numbers</span>
           <span class="pill-small">js</span>
-          <span class="code-ref">Source: <code>examples/api/array-reduce-example.js</code></span>
+
         </div>
-        <pre><code data-src="examples/api/array-reduce-example.js"></code></pre>
+        <pre><code>// Example code</code></pre>
       </div>
     </div>
   `
@@ -1069,9 +1081,9 @@ PAGES['api-fetch'] = {
         <div class="code-block-header">
           <span>Example · GET JSON</span>
           <span class="pill-small">js</span>
-          <span class="code-ref">Source: <code>examples/api/fetch-example.js</code></span>
+
         </div>
-        <pre><code data-src="examples/api/fetch-example.js"></code></pre>
+        <pre><code>// Example code</code></pre>
       </div>
     </div>
   `
@@ -1344,7 +1356,7 @@ params.get('x'); // "1"</code></pre></div></div>`
   // Function to load code from separate files
   async function loadCodeFromFiles() {
     const codeElements = contentEl.querySelectorAll('code[data-src]');
-    
+
     for (const codeEl of codeElements) {
       const src = codeEl.getAttribute('data-src');
       if (!src) continue;
