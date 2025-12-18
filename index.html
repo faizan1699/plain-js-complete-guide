@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Guide - Complete Professional Documentation</title>
+  <meta name="description" content="Complete JavaScript guide from beginner to advanced - language reference, API documentation, and real-world patterns" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout-shell">
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">JS</div>
+        <div class="brand-text">
+          <span class="brand-text-title">JavaScript Handbook</span>
+          <span class="brand-text-subtitle">Language · Reference · Patterns</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <input
+          id="searchInput"
+          class="search-input"
+          type="search"
+          placeholder="Search sections (e.g. async, arrays, map)…"
+          aria-label="Search documentation"
+        />
+        <span class="pill">
+          <span>Client: ES6+</span>
+          <span class="pill-dot"></span>
+          <span>Production Ready</span>
+        </span>
+      </div>
+    </header>
+
+    <!-- MAIN LAYOUT -->
+    <main class="main-shell">
+      <!-- SIDEBAR NAVIGATION -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-heading">Contents</div>
+
+        <!-- Core Guide Sections -->
+        <div class="nav-section">
+          <button class="nav-group-label" type="button" aria-expanded="true">
+            <span>
+              Core Guide
+              <small>Sections 1–21</small>
+            </span>
+            <span class="nav-group-label-icon">▾</span>
+          </button>
+          <ul class="nav-items" data-group="core">
+            <li>
+              <button class="nav-item-btn" data-page="section-1-intro">
+                <span class="nav-item-index">1</span>
+                <span class="nav-item-title">Introduction to JavaScript</span>
+                <span class="nav-item-tag">Basics</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-2-history">
+                <span class="nav-item-index">2</span>
+                <span class="nav-item-title">History & ECMAScript Versions</span>
+                <span class="nav-item-tag">ES Specs</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-3-basics">
+                <span class="nav-item-index">3</span>
+                <span class="nav-item-title">Language Basics</span>
+                <span class="nav-item-tag">Syntax</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-4-functions">
+                <span class="nav-item-index">4</span>
+                <span class="nav-item-title">Functions Deep Dive</span>
+                <span class="nav-item-tag">Core</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-5-objects">
+                <span class="nav-item-index">5</span>
+                <span class="nav-item-title">Objects & Prototypes</span>
+                <span class="nav-item-tag">OO</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-6-arrays">
+                <span class="nav-item-index">6</span>
+                <span class="nav-item-title">Arrays & Collections</span>
+                <span class="nav-item-tag">Data</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-7-primitives">
+                <span class="nav-item-index">7</span>
+                <span class="nav-item-title">Strings, Numbers & Dates</span>
+                <span class="nav-item-tag">Core</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-8-async">
+                <span class="nav-item-index">8</span>
+                <span class="nav-item-title">Asynchronous JavaScript</span>
+                <span class="nav-item-tag">Critical</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-9-dom">
+                <span class="nav-item-index">9</span>
+                <span class="nav-item-title">DOM & Events</span>
+                <span class="nav-item-tag">Browser</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-10-browser-apis">
+                <span class="nav-item-index">10</span>
+                <span class="nav-item-title">Browser APIs</span>
+                <span class="nav-item-tag">Web</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-11-data-fetching">
+                <span class="nav-item-index">11</span>
+                <span class="nav-item-title">Data Fetching</span>
+                <span class="nav-item-tag">HTTP</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-12-modules">
+                <span class="nav-item-index">12</span>
+                <span class="nav-item-title">Modules & Organization</span>
+                <span class="nav-item-tag">Architecture</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-13-state">
+                <span class="nav-item-index">13</span>
+                <span class="nav-item-title">Storage & State Management</span>
+                <span class="nav-item-tag">State</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-14-errors">
+                <span class="nav-item-index">14</span>
+                <span class="nav-item-title">Error Handling & Debugging</span>
+                <span class="nav-item-tag">Reliability</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-15-performance">
+                <span class="nav-item-index">15</span>
+                <span class="nav-item-title">Performance & Optimization</span>
+                <span class="nav-item-tag">Perf</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-16-security">
+                <span class="nav-item-index">16</span>
+                <span class="nav-item-title">Security</span>
+                <span class="nav-item-tag">Web Sec</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-17-real-apps">
+                <span class="nav-item-index">17</span>
+                <span class="nav-item-title">Real Applications</span>
+                <span class="nav-item-tag">Practical</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-18-frameworks">
+                <span class="nav-item-index">18</span>
+                <span class="nav-item-title">Frameworks & Libraries</span>
+                <span class="nav-item-tag">Ecosystem</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-19-modern">
+                <span class="nav-item-index">19</span>
+                <span class="nav-item-title">Modern Features</span>
+                <span class="nav-item-tag">ESNext</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-20-api">
+                <span class="nav-item-index">20</span>
+                <span class="nav-item-title">API & Method Reference</span>
+                <span class="nav-item-tag">Reference</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-page="section-21-best">
+                <span class="nav-item-index">21</span>
+                <span class="nav-item-title">Best Practices & Interviews</span>
+                <span class="nav-item-tag">Expert</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- API Reference: 50 Common Functions -->
+        <div class="nav-section">
+          <button class="nav-group-label" type="button" aria-expanded="true">
+            <span>
+              API Reference
+              <small>50 Common Functions</small>
+            </span>
+            <span class="nav-group-label-icon">▾</span>
+          </button>
+          <ul class="nav-items" data-group="api" id="apiNavItems">
+            <!-- Populated dynamically by app.js -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT AREA -->
+      <section class="content" id="content" role="main">
+        <div class="empty-state">
+          <h3>Choose a topic to get started</h3>
+          <p>
+            Use the sidebar to open a section (e.g. <strong>Functions Deep Dive</strong>, 
+            <strong>Asynchronous JavaScript</strong>, or one of the <strong>API Reference</strong> functions).
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
