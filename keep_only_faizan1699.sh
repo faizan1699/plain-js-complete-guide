@@ -57,3 +57,4 @@ echo ""
 echo "Current commits:"
 git log --oneline --format="%h %an %s"
 
+
